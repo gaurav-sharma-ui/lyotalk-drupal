@@ -1,0 +1,104 @@
+.homePage__speaker {
+	.equal-1-1 {
+		position: relative;
+		display: block;
+		overflow: hidden;
+		height: auto !important;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		transform: translate3d(0, 0, 0);
+		&::before {
+			display: block;
+			content: "";
+			width: 100%;
+			padding-top: 100%;
+		}
+	}
+
+	.card > .card-wrap {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		z-index: 4;
+	}
+	.equal-1-1 > * {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+	.text-shadow {
+		text-shadow: 0 0 32px rgba(0, 0, 0, 0.5);
+	}
+	.card {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		min-width: 0;
+		word-wrap: break-word;
+		border-radius: 0;
+		background-clip: border-box;
+		border: 0 solid rgba(0, 0, 0, 0.125);
+
+		&-footer {
+			padding: 2.5rem 2.5rem;
+			background-color: rgba(0, 0, 0, 0);
+			border-top: 0 solid rgba(0, 0, 0, 0.125);
+		}
+	}
+
+	.card-hover-gradient {
+		transition: background-color 0.2s ease-in-out;
+		background-color: #000;
+		.background {
+			-webkit-mask-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				from(#000),
+				to(rgba(0, 0, 0, 0.4))
+			);
+			mask-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				from(#000),
+				to(rgba(0, 0, 0, 0.4))
+			);
+		}
+	}
+	.card-hover-gradient:hover {
+		background-color: $color-primary;
+	}
+
+	.background {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		background-size: cover;
+		background-position: center;
+		overflow: hidden;
+	}
+	h5 {
+		font-size: 2.8rem;
+		line-height: 3rem;
+		margin-bottom: 1rem;
+		color: $color-white;
+		font-weight: $bold-700;
+	}
+
+	span {
+		font-size: 1.6rem;
+		line-height: 1.6rem;
+		display: block;
+		margin-bottom: 0.8rem;
+		color: $color-white !important;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

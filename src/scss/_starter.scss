@@ -1,0 +1,204 @@
+html {
+	// This defines what 1rem is
+	font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+	@include respond(tab-land) {
+		// width < 1200?
+		font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+	}
+
+	@include respond(tab-port) {
+		// width < 900?
+		font-size: 50%; //1 rem = 8px, 8/16 = 50%
+	}
+
+	@include respond(big-desktop) {
+		font-size: 75%; //1rem = 12, 12/16
+	}
+}
+
+::selection {
+	background-color: $color-primary;
+	color: $color-white;
+}
+
+.bg-primary {
+	background-color: rgb(2, 0, 36) !important;
+}
+.vh-60 {
+	min-height: 60rem;
+}
+
+// BUTTONS classes
+.btn {
+	display: inline-block;
+	font-weight: $bold-500;
+	color: $color-secondary;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid transparent;
+	padding: 1.2rem 2.2rem;
+	font-size: 1.7rem;
+	line-height: 2rem;
+	border-radius: 0.25rem;
+
+	height: 52px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 200px;
+
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+		border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+	&:hover {
+		background-color: $color-primary;
+	}
+}
+
+.btn-orange {
+	// background-color: $color-primary;
+	background: linear-gradient(-120deg, #ff6d00 0%, #f48634 100%) !important;
+	border-color: $color-primary;
+}
+
+.btn-rounded {
+	border-radius: 10rem !important;
+}
+
+.btn-orange-inverse {
+	background-color: transparent;
+	border-color: $color-primary;
+	color: $color-white;
+	&.border-white {
+		border-color: $color-white;
+	}
+}
+
+// Font sizes classes
+
+.h1 {
+	font-size: $h1;
+	line-height: $h1;
+}
+
+.h2 {
+	font-size: $h2;
+	line-height: $h2;
+}
+
+.h3 {
+	font-size: $h3;
+	line-height: $h3;
+}
+
+.h4 {
+	font-size: $h4;
+	line-height: $h4;
+}
+
+.p {
+	font-size: $default-font-size;
+	line-height: 3rem;
+}
+
+// Font weight classes
+.font_bold {
+	font-weight: $bold-700;
+}
+
+// Text Color classes
+.color-black {
+	color: $color-secondary;
+}
+
+.bg-primary-orange {
+	background-image: linear-gradient(
+		-120deg,
+		#ff6d00 0%,
+		#f48634 100%
+	) !important;
+}
+
+// Seperators css
+
+.seperator__one {
+	p {
+		position: relative;
+		&::before {
+			content: "";
+			left: 50%;
+			top: -30px;
+			height: 5px;
+			width: 90px;
+			position: absolute;
+			border-radius: 20px;
+			background: $color-primary;
+			transform: translateX(-50%);
+		}
+	}
+	span {
+		font-size: 1.6rem;
+		line-height: 1.6rem;
+	}
+}
+
+.seperator__two {
+	background-image: url(https://demo.xpeedstudio.com/evenex/home-main/wp-content/uploads/sites/12/2020/12/about_section_top_bg.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	color: $color-white;
+
+	.margin-negative {
+		margin-left: -65px;
+		z-index: 10;
+		position: relative;
+	}
+
+	&--content {
+		background: linear-gradient(-120deg, #ff6d00 0%, #f48634 100%) !important;
+		box-shadow: 0px 20px 60px 0px rgba(0, 0, 0, 0.1);
+		transition: background 0.3s, border 0.3s, border-radius 0.3s,
+			box-shadow 0.3s;
+		margin: 0px 0px 0px 0px;
+		border-radius: 6px 6px 6px 6px;
+		div.backDrop {
+			padding: 60px 60px 60px 60px;
+
+			&:before {
+				position: absolute;
+				content: "";
+				top: 50%;
+				left: 12px;
+				height: calc(100% - 180px);
+				width: 100%;
+				background: #e0e2e8;
+				transform: translateY(-50%);
+				border-radius: 10px;
+				z-index: -1;
+				pointer-events: none;
+			}
+		}
+		ul {
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 12px;
+			li {
+				list-style: none;
+				font-size: 22px;
+				line-height: 32px;
+				position: relative;
+
+				&:before {
+					content: "•"; /* Unicode for a bullet */
+					color: #fff; /* Color of the dot */
+					font-size: 24px; /* Size of the dot */
+					margin-right: 10px; /* Space between the dot and the text */
+					vertical-align: middle; /* Align the dot with the text */
+				}
+			}
+		}
+	}
+}

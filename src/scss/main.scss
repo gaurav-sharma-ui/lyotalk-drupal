@@ -1,0 +1,29 @@
+@import "variable";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "mixins";
+@import "starter";
+@import "navbar";
+@import "mainBanner";
+@import "aboutUs";
+@import "speakers";
+@import "topics";
+@import "whoAttending";
+@import "sponsors";
+@import "pricing";
+
+@import "../../node_modules/slick-slider/slick/slick.scss";
+@import "../../node_modules/slick-slider/slick/slick-theme.scss";
+@import "footer";
+
+@import "responsive";
+
+@media (min-width: 1400px) {
+	.container,
+	.container-sm,
+	.container-md,
+	.container-lg,
+	.container-xl,
+	.container-xxl {
+		max-width: 1200px;
+	}
+}
