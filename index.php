@@ -459,7 +459,7 @@ https://lokeshdhakar.com/projects/lightbox2/?source=post_page-----db33a472e02d--
               </div>
 
               <div class="homePage__pricing-wrapper-content">
-                <ul class="text-center">
+                <ul class="text">
                   <li>Workshop</li>
                   <li>Event Expo: Full access to all services & solutions from our partners</li>
                   <li>Food & drinks: All meals are covered throughout the event</li>
