@@ -1,0 +1,40 @@
+.homePage__aboutUS {
+	&-date {
+		position: absolute;
+		bottom: -60px;
+		left: -20px;
+	}
+	.upperdate,
+	.lowerdate {
+		max-width: 100px;
+		background: $color-primary;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 15px 20px;
+		text-align: center;
+		p {
+			font-size: 22px;
+			line-height: 28px;
+			&:first-child {
+				border-bottom: solid 1px #fff;
+			}
+			&:last-child {
+				font-size: 14px;
+				line-height: 14px;
+				margin-bottom: 0;
+			}
+			span {
+				font-size: 14px;
+				line-height: 14px;
+				padding-bottom: 10px;
+				display: flex;
+			}
+		}
+	}
+	.lowerdate {
+		background: $color-secondary;
+		margin: 26px 30px 0px -18px;
+	}
+}

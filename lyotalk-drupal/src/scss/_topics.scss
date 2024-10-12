@@ -1,0 +1,10 @@
+.homePage__topics {
+	background-color: $colo-primary-light;
+	&-first {
+		text-align: right;
+	}
+	p {
+		font-size: 2.6rem;
+		line-height: 3rem;
+	}
+}

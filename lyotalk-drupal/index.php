@@ -9,7 +9,6 @@ include 'header.php'; ?>
 <!-- https://demo-themewinter.com/exhibz/education/about-us/ - who should attend  -->
 <!-- https://grandconference.themegoods.com/v5/vr/   ----- tickets -->
 <!-- https://grandconferencev5-2.themegoods.com/ -- sponsors <section></section> -->
-<!-- https://demo-themewinter.com/exhibz/creative-conference/ --- foot and subscribe -->
 
 
 <!-- https://wowjs.uk/docs.html

@@ -1,0 +1,85 @@
+.main__bannerWrapper {
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+	background: linear-gradient(
+		180deg,
+		rgb(2, 0, 36) 0%,
+		rgba(0, 0, 0, 0.9) 45%,
+		rgb(2, 0, 36) 100%
+	);
+
+	&-parent {
+		.container {
+			position: relative;
+		}
+		.row {
+			height: 100%;
+			padding-top: 6.25rem;
+			padding-bottom: 2rem;
+		}
+	}
+}
+.image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-size: cover;
+	background-position: 0 -70px;
+
+	&-gradient-vertical {
+		-webkit-mask-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.8),
+			rgba(0, 0, 0, 0)
+		);
+	}
+}
+
+.font-big {
+	font-size: $font-big;
+	line-height: $font-big;
+	font-weight: $bold-700;
+	position: relative;
+	margin-bottom: 24px;
+	display: inline-block;
+	span {
+		font-size: 3rem;
+		line-height: normal;
+		color: $color-primary;
+		font-style: italic;
+		position: absolute;
+		bottom: -2rem;
+		right: 6px;
+	}
+}
+
+.font-small {
+	font-size: 2.6rem;
+	line-height: 3rem;
+	margin-bottom: 0;
+	&-span {
+		font-size: 1.6rem;
+		line-height: 1.6rem;
+		margin-bottom: 12px;
+		display: inline-block;
+		background: $color-primary;
+		padding: 4px 15px;
+		color: $color-secondary;
+		font-weight: $bold-700;
+		position: absolute;
+		left: 10px;
+		top: -24px;
+	}
+}
+
+.date__location {
+	padding-bottom: 6rem;
+	span {
+		color: $color-primary;
+		font-size: 1.4rem;
+		line-height: 1.4rem;
+	}
+}
