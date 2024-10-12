@@ -1,0 +1,56 @@
+.homePage__pricing {
+	background-color: $color-secondary;
+	background-image: url(https://agora.ancorathemes.com/wp-content/uploads/2024/07/h4-gradient-texture.svg);
+	background-repeat: no-repeat;
+	background-position: -360px -50px;
+
+	p,
+	small,
+	h3 {
+		color: $color-white;
+	}
+	small {
+		font-size: 1.4rem;
+		color: $color-primary;
+	}
+
+	&-wrapper {
+		background-color: #202020;
+		padding: 4rem 3rem 4rem;
+		min-height: 550px;
+		h3 {
+			font-size: 2rem;
+			line-height: 2.4rem;
+		}
+		&-price {
+			margin-bottom: 2rem;
+			.amount {
+				font-size: 3.2rem;
+				font-weight: $bold-700;
+				line-height: 3.8rem;
+				margin-bottom: 0;
+			}
+			.type {
+				font-size: 12px;
+				color: $color-primary;
+			}
+		}
+		&-content {
+			color: #aeaeae;
+			ul {
+				padding: 0;
+				li {
+					list-style: none;
+					font-size: 16px;
+					line-height: 36px;
+				}
+			}
+		}
+		&.active {
+			border: solid;
+		}
+	}
+	&-wrapper-parent {
+		padding: 0 2rem;
+	}
+}

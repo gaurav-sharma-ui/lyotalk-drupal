@@ -1,0 +1,58 @@
+.navbar {
+	padding: 2rem 0;
+	@include media-breakpoint-down(lg) {
+		padding: 2rem 1rem;
+	}
+	&-brand {
+		margin-right: 4.5rem;
+		font-size: $font-size-32;
+		line-height: $line-height-32;
+		color: $color-white;
+		span {
+			font-size: 1.4rem;
+			line-height: normal;
+			text-align: right;
+			align-self: end;
+			margin-left: 0.1rem;
+			color: $color-primary;
+		}
+		@include media-breakpoint-down(lg) {
+			color: $color-secondary;
+		}
+	}
+	&-collapse {
+		.nav-item + .nav-item {
+			margin-left: 1.5rem;
+		}
+		a {
+			font-size: 1.6rem;
+			line-height: 1.6rem;
+			color: $color-white;
+
+			@include media-breakpoint-down(lg) {
+				color: $color-secondary;
+			}
+		}
+	}
+	&-locations {
+		.nav-item + .nav-item {
+			margin-left: 0.5rem;
+		}
+		a {
+			font-size: 1.2rem;
+			line-height: 1.2rem;
+		}
+		p {
+			margin: 0;
+			margin-left: 0.3rem;
+		}
+	}
+}
+
+.white-bg {
+	.navbar-brand,
+	.navbar-collapse a,
+	.navbar-locations p {
+		color: $color-secondary;
+	}
+}
